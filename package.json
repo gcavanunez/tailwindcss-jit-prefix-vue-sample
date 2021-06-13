@@ -3,11 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev-tw-sample": "cross-env TAILWIND_MODE=watch NODE_ENV=development postcss ./src/tw.css -o ./src/tw.build.css -w",
+    "dev-tw": "cross-env TAILWIND_MODE=watch NODE_ENV=development postcss ../kmjk-event-creator-frontend/src/tw.css -o ./src/tw.build.css -w",
+    "build-tw-dev": "cross-env TAILWIND_MODE=build NODE_ENV=development postcss ./src/tw.css -o ./src/tw.build.css",
+    "build-tw-prod": "cross-env TAILWIND_MODE=build NODE_ENV=production postcss ./src/tw.css -o ./src/tw.build.css",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
@@ -16,11 +21,16 @@
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/eslint-config-prettier": "^6.0.0",
+    "autoprefixer": "^9",
     "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^6.2.2",
+    "postcss": "^7",
+    "postcss-cli": "^8.3.1",
     "prettier": "^2.2.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vue-template-compiler": "^2.6.11"
   }
 }
