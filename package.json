@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "tw": "npx tailwindcss  -i ./src/tw.css -o ./src/tw.build.css --watch",
     "dev-tw-sample": "cross-env TAILWIND_MODE=watch NODE_ENV=development postcss ./src/tw.css -o ./src/tw.build.css -w",
     "dev-tw": "cross-env TAILWIND_MODE=watch NODE_ENV=development postcss ../kmjk-event-creator-frontend/src/tw.css -o ./src/tw.build.css -w",
     "build-tw-dev": "cross-env TAILWIND_MODE=build NODE_ENV=development postcss ./src/tw.css -o ./src/tw.build.css",

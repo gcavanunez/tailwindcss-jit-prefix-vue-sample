@@ -14,14 +14,15 @@ module.exports = {
   // purge: [
   //   '../kmjk-event-creator-frontend/src/views/Admin/Booths/BoothsIndex.vue',
   // ],
-  purge: ['./src/components/ErrorSample.vue'],
+  purge: ['./src/Base.vue'],
+  // purge: ['./src/components/ErrorSample.vue'],
   // purge: ['../kmjk-event-creator-frontend/src/App.vue'],
   // purge: {
   //   enable: true,
   //   content: ['./public/index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   // },
   important: true,
-  prefix: 'tw-',
+  // prefix: 'tw-',
   mode: 'jit',
   darkMode: false, // or 'media' or 'class'
   theme: {
