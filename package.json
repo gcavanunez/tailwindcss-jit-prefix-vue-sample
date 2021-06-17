@@ -30,7 +30,7 @@
     "postcss": "^7",
     "postcss-cli": "^8.3.1",
     "prettier": "^2.2.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@canary",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@latest",
     "vue-template-compiler": "^2.6.11"
   }
 }
